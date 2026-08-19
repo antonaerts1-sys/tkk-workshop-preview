@@ -134,7 +134,9 @@ header { position: sticky; top: 0; z-index: 50; background: var(--wit); }
 .eerlijk-item { border-top: 2px solid var(--zwart); padding: 1.5rem 0; }
 .eerlijk-item h3 { font-size: clamp(1.25rem, 2vw, 1.6rem); margin-bottom: .85rem; }
 
-.praktisch { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; }
+.praktisch { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.25rem 3rem; max-width: 68rem; }
+@media (max-width: 900px) { .praktisch { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .praktisch { grid-template-columns: 1fr; } }
 .praktisch dt { font-family: "GTFlexa Condensed", sans-serif; text-transform: uppercase; font-size: 1.15rem; margin-bottom: .35rem; }
 .praktisch dd { font-size: 1.0625rem; line-height: 1.6; }
 
